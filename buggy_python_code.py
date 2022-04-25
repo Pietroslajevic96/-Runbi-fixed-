@@ -20,7 +20,7 @@ def foofoo(user):
 
 
 # Pickles
-class RunBinSh(object):
+class RunBinSh():
     def __reduce__(self):
         return (subprocess.Popen, (('/bin/sh',),))
 
